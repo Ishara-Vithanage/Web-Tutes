@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 2</title>
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+
+        .topic{
+            text-align: center;
+        }
+
+        table{
+            margin: 0 auto;
+            border: 2px ridge blue;
+            width: 50%;
+        }
+
+        .row1-prices{
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        th, td{
+            border: 1px solid blue;
+            padding-left: 10px;
+        }
+
+        .swimfit{
+            background-color: #e0ffff;
+        }
+
+        .laneswim{
+            background-color: #add8e6;
+        }
+
+        .parentstots{
+            background-color: #ffffe0;
+        }
+
+        .publicswim{
+            background-color: #f0fff0;
+        }
+
+        .lastcolumn{
+            background-color: #b0c4de;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Page topic section -->
+     <div class="topic">
+        <h1>Tutorial 2 - Pool Schedule</h1>
+        <h2>Ishara Harshana</h2>
+    </div>
+
+    <!-- Table section -->
+     <table>
+
+        <!-- First row section including prices-->
+        <tr class="row1-prices">
+            <td colspan="6">
+                <h4>Prices: </h4>
+                <ul>
+                    <li>Free - Infants (0-3)</li>
+                    <li> &#163;3 - Child (4-12)</li>
+                    <li> &#163;4 - Youth (13-17)</li>
+                    <li> &#163;5 - Adult</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Second row - table heading -->
+         <tr>
+            <th></th>
+            <th><h3>7:00-8:00</h3></th>
+            <th><h3>8:00-9:00</h3></th>
+            <th><h3>9:00-11:00</h3></th>
+            <th><h3>11:00-5:00</h3></th>
+            <th><h3>5:00-7:00</h3></th>
+        </tr>
+
+        <!-- Monday row -->
+        <tr>
+            <th><h3>Monday</h3></th>
+            <td class="swimfit">SwimFit</td>
+            <td class="laneswim" colspan="2">Lane Swim</td>
+            <td class="publicswim" rowspan="7">Public Swim</td>
+            <td class="lastcolumn">Adult Swim Club</td>
+        </tr>
+
+        <!-- Tuesday row -->
+        <tr>
+            <th><h3>Tuesday</h3></th>
+            <td class="laneswim" colspan="2">Lane Swim</td>
+            <td class="parentstots">Parents and Tots</td>
+            <td class="lastcolumn">Junior Swim Club</td>
+        </tr>
+
+        <!-- Wednesday row -->
+        <tr>
+            <th><h3>Wednesday</h3></th>
+            <td class="swimfit">SwimFit</td>
+            <td class="laneswim" colspan="2">Lane Swim</td>
+            <td class="lastcolumn">Adult Swim Club</td>
+        </tr>
+
+        <!-- Thursday row -->
+        <tr>
+            <th><h3>Thursday</h3></th>
+            <td class="laneswim"" colspan="2">Lane Swim</td>
+            <td class="parentstots">Parents and Tots</td>
+            <td class="lastcolumn">Junior Swim Club</td>
+        </tr>
+
+        <!-- Friday row -->
+        <tr>
+            <th><h3>Friday</h3></th>
+            <td class="swimfit">SwimFit</td>
+            <td class="laneswim" colspan="2">Lane Swim</td>
+            <td rowspan="3">Closed</td>
+        </tr>
+
+        <!-- Saturday row -->
+        <tr>
+            <th><h3>Saturday</h3></th>
+            <td class="publicswim" colspan="3">Public Swim</td>
+        </tr>
+
+        <!-- Sunday row -->
+        <tr>
+            <th><h3>Sunday</h3></th>
+            <td class="publicswim" colspan="3">Public Swim</td>
+        </tr>
+
+     </table>
+</body>
+</html>
