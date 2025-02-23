@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: Gainsboro;
+        }
+
+        .navbar {
+            top: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            gap: 40px;
+            padding: 10px;
+            background-color: rgb(160, 200, 255);
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        .sub-heading {
+            background-color: rgb(160, 200, 255);
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+        }
+
+        .sub-heading img {
+            width: 50px;
+            height: auto;
+            padding: 10px;
+        }
+
+        .content {
+            margin-left: 40px;
+        }
+
+        .content p {
+            margin-left: 40px;
+        }
+
+        .up-arrow-section {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0 40px 0;
+        }
+
+        .up-arrow-section img {
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar section -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#uni-work">University Work</a></li>
+            <li><a href="#web-stuff">Web Stuff</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+        </ul>
+    </div>
+
+    <!-- Main heading -->
+    <h1 id="main-heading">My Useful Links</h1>
+
+    <!-- Tutorials -->
+    <div class="sub-heading">
+        <img src="./tut3images/tut.png" alt="tutorial-icon">
+        <h2 id="tutorials">Tutorials</h2>
+    </div>
+    <div class="content">
+        <dl>Tutorial 1</dl>
+        <p>This is a link to my first tutorial, where I practiced basic html &amp; CSS.</p>
+        <dl>Tutorial 2</dl>
+        <p>This is a link to my second tutorial, where I practiced with Lists and Tables</p>
+    </div>
+
+    <!-- University Work -->
+    <div class="sub-heading">
+        <img src="./tut3images/uni.png" alt="uni-icon">
+        <h2 id="uni-work">University Work</h2>
+    </div>
+    <div class="content">
+        <dl>Blackboard</dl>
+        <p>The VLE we use at University</p>
+        <dl>Timetabling</dl>
+        <p>This is a link to my University Timetable, with all my lectures and tutorials</p>
+        <dl>Web Dev Shedule</dl>
+        <p>A link to my Web Design and Development module schedule, from which I can access all m lectures and tutorials, and check deadline dates</p>
+        <dl>Student Hub</dl>
+        <p>The Student Hub is the University Web site for current students which provides information such as new and events, and links to all the University Web systems and services</p>
+    </div>
+
+    <!--Web Stuff -->
+    <div class="sub-heading">
+        <img src="./tut3images/web.png" alt="web-stuff-icon">
+        <h2 id="web-stuff">Web Stuff</h2>
+    </div>
+    <div class="content">
+        <dl>MDN Web Docs</dl>
+        <p>Online resources for Web Development developed by the Mozilla Developer Network</p>
+        <dl>W3C</dl>
+        <p>World Wide Web Consortium, which amongst other things develops the various Web standards</p>
+    </div>
+
+    <!--Socail Media -->
+    <div class="sub-heading">
+        <img src="./tut3images/social.png" alt="social-icon">
+        <h2 id="social-media">Social Media</h2>
+    </div>
+    <div class="content">
+        <dl>Twitter</dl>
+        <p>Link to Twitter, an online microblogging site which I use to follow what's happening in the web developer world</p>
+        <dl>Facebook</dl>
+        <p>To keep in touch with family and friends</p>
+        <dl>Instagram</dl>
+        <p>For posting pictures about my life</p>
+    </div>
+
+    <!-- Back to the top section -->
+     <div class="up-arrow-section">
+        <img class="up-arrow" src="./tut3images/up_arrow.png" alt="up-arrow-icon">
+        <dl><a href="#main-heading">Back to the top</a></dl>
+    </div>
+
+    <!-- Final Section -->
+     <div>
+        <sup>Last modified date: 23/02/2025</sup>
+        <address>Email: w2121271@westminster.ac.uk</address>
+     </div>
+
+</body>
+</html>
