@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .personal-details {
+            background-color: #c4d7f5;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #000000;
+            border-radius: 20px;
+        }
+
+        .booking-details {
+            background-color: #f5dfc4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #000000;
+            border-radius: 20px;
+        }
+
+        .button-section {
+            background-color: #b08856;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #000000;
+            border-radius: 20px;
+        }
+
+        .radio {
+            margin-left: 20px;
+        }
+
+        button {
+            background-color: #86abd4;
+            border: 2px solid #faf7f4;
+            color: #faf7f4;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Topic -->
+    <h1>Hotel Reservation</h1>
+
+    <!-- Personal Details -->
+    <fieldset class="personal-details">
+        <legend><h3>Personal Details</h3></legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter your first name" required><br><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" placeholder="Enter your surname" required><br><br>
+
+        <label for="email">Email address:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required><br><br>
+
+        <label for="password">Setup a password:</label>
+        <input type="password" id="password" placeholder="Min 8 characters. At least 1 cap, num, special characters." required><br><br>
+    </fieldset>
+
+    <!-- Booking Details -->
+    <fieldset class="booking-details">
+        <legend><h3>Booking Details</h3></legend>
+
+        <label for="checkin">Checkin day:</label>
+        <input type="date" id="checkin" required><br><br>
+
+        <label for="num-days">Number of days:</label>
+        <input type="text" id="num-days" placeholder="Enter the number of days" required><br><br>
+
+        <!-- Radio section for room type -->
+         <label for="single-room">Single Room</label>
+         <input class="radio" type="radio" id="single-room"><br><br>
+
+         <label for="double-room">Double Room</label>
+         <input class="radio" type="radio" id="double-room"><br><br>
+         
+         <label for="king-room">King Room</label>
+         <input class="radio" type="radio" id="king-room"><br><br>
+
+
+        <!-- Text area for Breakfast-->
+         <label for="breakfast">Breakfast</label>
+         <select id="breakfast" required>
+            <option selected disabled >Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+         </select><br><br>
+
+        <label for="special-req">Special Requirements:</label>
+        <textarea id="special-req" placeholder="Please provide any special requirements"></textarea><br><br>
+    </fieldset>
+
+    <!-- Button section-->
+    <fieldset class="button-section">
+        <div class="buttons">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </fieldset>
+    
+</body>
+</html>
