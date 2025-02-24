@@ -32,6 +32,10 @@
             border-radius: 20px;
         }
 
+        .radio.section {
+            margin: 0 0 20px 20px;
+        }
+
         .button-section {
             background-color: #b08856;
             padding: 20px;
@@ -40,8 +44,11 @@
             border-radius: 20px;
         }
 
-        .radio {
-            margin-left: 20px;
+        label {
+            display: inline-block;   
+            width: 150px;               
+            text-align: left;          
+            margin-right: 10px;                    
         }
 
         button {
@@ -55,6 +62,7 @@
         .buttons {
             float: right;
         }
+
     </style>
 </head>
 <body>
@@ -89,14 +97,17 @@
         <input type="text" id="num-days" placeholder="Enter the number of days" required><br><br>
 
         <!-- Radio section for room type -->
-         <label for="single-room">Single Room</label>
-         <input class="radio" type="radio" id="single-room"><br><br>
+         <p>Select room type: </p>
+         <div class="radio section">
+            <label for="single-room">Single Room</label>
+            <input type="radio" id="single-room"><br><br>
 
-         <label for="double-room">Double Room</label>
-         <input class="radio" type="radio" id="double-room"><br><br>
-         
-         <label for="king-room">King Room</label>
-         <input class="radio" type="radio" id="king-room"><br><br>
+            <label for="double-room">Double Room</label>
+            <input type="radio" id="double-room"><br><br>
+            
+            <label for="king-room">King Room</label>
+            <input type="radio" id="king-room"><br><br>
+        </div>
 
 
         <!-- Text area for Breakfast-->
